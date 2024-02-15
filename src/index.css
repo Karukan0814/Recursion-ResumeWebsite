@@ -186,18 +186,21 @@ body:has(.card[data-color="green"]:hover) {
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
 }
 
+/* 以下、あぶく玉の表現 */
+
+/* 円形を表現 */
 .ball {
-  display: inline-block;
+  /* display: inline-block; */
   width: 100%;
   height: 100%;
   border-radius: 100%;
   position: relative;
   background: radial-gradient(
     circle at bottom,
-    #81e8f6,
-    #76deef 10%,
-    #055194 80%,
-    #062745 100%
+    #fff,
+    #ecf1f9 10%,
+    #d2e4ff 80%,
+    #00c6ff 100%
   );
 }
 .ball:before {
@@ -249,6 +252,8 @@ body:has(.card[data-color="green"]:hover) {
 .ball.plain:after {
   display: none;
 }
+
+/* 以下、あぶく玉のツヤを表現 */
 .ball.bubble {
   background: radial-gradient(
     circle at 50% 55%,
@@ -257,6 +262,9 @@ body:has(.card[data-color="green"]:hover) {
     rgba(225, 238, 255, 0.8) 60%,
     rgba(43, 130, 255, 0.4)
   );
+}
+
+.ball.bubble:hover {
   -webkit-animation: bubble-anim 2s ease-out infinite;
   animation: bubble-anim 2s ease-out infinite;
 }
@@ -288,4 +296,71 @@ body:has(.card[data-color="green"]:hover) {
     white 84%,
     rgba(255, 255, 255, 0) 100%
   );
+}
+
+/* 以下、ホバー時の動きを表現 */
+@-webkit-keyframes bubble-anim {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  20% {
+    -webkit-transform: scaleY(0.95) scaleX(1.05);
+    transform: scaleY(0.95) scaleX(1.05);
+  }
+
+  48% {
+    -webkit-transform: scaleY(1.1) scaleX(0.9);
+    transform: scaleY(1.1) scaleX(0.9);
+  }
+
+  68% {
+    -webkit-transform: scaleY(0.98) scaleX(1.02);
+    transform: scaleY(0.98) scaleX(1.02);
+  }
+
+  80% {
+    -webkit-transform: scaleY(1.02) scaleX(0.98);
+    transform: scaleY(1.02) scaleX(0.98);
+  }
+
+  97%,
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes bubble-anim {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  20% {
+    -webkit-transform: scaleY(0.95) scaleX(1.05);
+    transform: scaleY(0.95) scaleX(1.05);
+  }
+
+  48% {
+    -webkit-transform: scaleY(1.1) scaleX(0.9);
+    transform: scaleY(1.1) scaleX(0.9);
+  }
+
+  68% {
+    -webkit-transform: scaleY(0.98) scaleX(1.02);
+    transform: scaleY(0.98) scaleX(1.02);
+  }
+
+  80% {
+    -webkit-transform: scaleY(1.02) scaleX(0.98);
+    transform: scaleY(1.02) scaleX(0.98);
+  }
+
+  97%,
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
