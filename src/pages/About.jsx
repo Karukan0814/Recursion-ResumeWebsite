@@ -5,6 +5,7 @@ import QualificationItem from "../components/QualificationItem";
 import ExperienceItem from "../components/ExperienceItem";
 import SkillItem from "../components/SkillItem";
 import Abstraction from "../components/Abstraction";
+import SubTitle from "../components/SubTitle";
 
 const About = () => {
   return (
@@ -12,8 +13,8 @@ const About = () => {
     <section className="max-container">
       <Abstraction />
 
-      <div className="py-10 flex flex-col ">
-        <h3 className="subhead-text text-slate-700  ">My skills.</h3>
+      <div className="py-16 flex flex-col my-10">
+        <SubTitle title={"My skills."} subtitle={"使用技術"} />
 
         <div className="mt-10 flex flex-wrap gap-8">
           {skills.map((skill, index) => (
@@ -22,9 +23,8 @@ const About = () => {
         </div>
       </div>
       <div className="py-16">
-        <h3 className="subhead-text text-slate-700">
-          Qualification.　　<span className="text-sm">資格</span>
-        </h3>
+        <SubTitle title={"Qualification."} subtitle={"資格"} />
+
         <div className="mt-3  flex flex-wrap gap-2 sm:gap-6">
           {qualifications.map((qualification, index) => {
             return (
@@ -34,12 +34,17 @@ const About = () => {
         </div>
       </div>
 
-      <div className="py-16">
-        <h3 className="subhead-text text-slate-700">Work Experience.</h3>
-        <div className="mt-5 flex flex-col gap-3 ">
+      <div className="py-16 ">
+        <SubTitle title={"Work Experience."} subtitle={"職歴"} />
+
+        <div className="mt-5 flex flex-col gap-3 px-10 text-slate-700 ">
           <p>
-            I've worked with all sorts of companies, leveling up my skills and
-            teaming up with smart people. Here's the rundown:
+            Experienced in system construction for financial institutions at an
+            SIer, demonstrating leadership as both team leader and deputy.
+            Skilled in overseeing projects from basic design to implementation."
+          </p>
+          <p>
+            SIerにて金融機関向けシステム構築に従事。チームリーダーやサブリーダーとしてのリーダーシップを発揮し、基本設計から実装までのプロジェクトを推進
           </p>
         </div>
 
