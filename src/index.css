@@ -78,6 +78,14 @@ body:has(.card[data-color="green"]:hover) {
     @apply text-black-500 font-extrabold flex-1 text-3xl max-md:text-center;
   }
 }
+
+.section-divider {
+  border: none;
+  height: 2px;
+  background-color: rgba(212, 222, 235, 0.7);
+  opacity: 0.8;
+  margin: 20px 0;
+}
 .bg_ocean {
   background: url("../src/assets/images/ocean.jpg");
   background-size: cover; /* 画像をカバーするように調整 */

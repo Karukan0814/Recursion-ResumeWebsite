@@ -22,6 +22,8 @@ const About = () => {
           ))}
         </div>
       </div>
+      <hr className="section-divider" />
+
       <div className="py-16">
         <SubTitle title={"Qualification."} subtitle={"資格"} />
 
@@ -33,7 +35,7 @@ const About = () => {
           })}
         </div>
       </div>
-
+      <hr className="section-divider" />
       <div className="py-16 ">
         <SubTitle title={"Work Experience."} subtitle={"職歴"} />
 
