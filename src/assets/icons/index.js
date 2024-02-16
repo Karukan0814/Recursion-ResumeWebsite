@@ -30,8 +30,9 @@ import soundoff from "./soundoff.png";
 import java from "./java.svg";
 import prisma from "./prisma.svg";
 import sql from "./sql.svg";
-
+import fish from "./fish.svg";
 export {
+  fish,
   css,
   express,
   git,

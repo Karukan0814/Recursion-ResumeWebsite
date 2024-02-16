@@ -112,55 +112,79 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "React.js Developer",
+    title: "Fullstack Web Developer",
+    position: "member",
+
     company_name: "Starbucks",
     icon: starbucks,
     iconBg: "#accbe1",
-    date: "March 2020 - April 2021",
+    date: "March 2015 - Jan 2016",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "5名チームのメンバーとして金融機関の業務システムの通知領域の詳細設計～開発～単体テスト～結合テストまで担当",
+      "javascriptとjQueryでクライアントサイド、JavaとOracleでバックエンドの開発を行った。",
     ],
   },
   {
-    title: "React Native Developer",
+    title: "Fullstack Web developer",
+    position: "sub leader",
+
     company_name: "Tesla",
     icon: tesla,
     iconBg: "#fbc3bc",
-    date: "Jan 2021 - Feb 2022",
+    date: "Feb 2016 - Oct 2016",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "5名チームのサブリーダーとして金融機関の業務システムの採番機能の詳細設計～開発～単体テスト～結合テストまで担当",
+      "javascriptとjQueryでクライアントサイド、JavaとOracleでバックエンドの開発を行った。",
     ],
   },
   {
-    title: "Web Developer",
+    title: "Fullstack Web developer",
+    position: "leader",
+
     company_name: "Shopify",
     icon: shopify,
     iconBg: "#b7e4c7",
-    date: "Jan 2022 - Jan 2023",
+    date: "Nov 2016",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "10名チームのリーダーとして金融機関の業務システムの海外送金領域の結合テストを担当",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#a2d2ff",
-    date: "Jan 2023 - Present",
+    title: "Fullstack Web developer",
+    position: "leader",
+
+    company_name: "Shopify",
+    icon: shopify,
+    iconBg: "#b7e4c7",
+    date: "Dec 2016 - Feb 2018",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "3名チームのリーダーとして金融機関の業務システムの顧客管理領域の詳細設計～開発～単体テスト～結合テストを担当",
+      "javascriptとjQueryでクライアントサイド、JavaとOracleでバックエンドの開発を行った。",
+    ],
+  },
+  {
+    title: "Frontend Web developer",
+    position: "sub leader",
+    company_name: "Shopify",
+    icon: shopify,
+    iconBg: "#b7e4c7",
+    date: "Mar 2018 - Jun 2019",
+    points: [
+      "6名チームのサブリーダーとして金融機関のクレジットカード決済システムの基本設計を担当",
+      "使用言語はTypescript。",
+    ],
+  },
+  {
+    title: "Frontend Web developer",
+    position: "leader",
+
+    company_name: "Shopify",
+    icon: shopify,
+    iconBg: "#b7e4c7",
+    date: "Jul 2019 - Dec 2019",
+    points: [
+      "6名チームのリーダーとして金融機関のクレジットカード決済システムの詳細設計～開発を担当",
+      "使用言語はTypescript。",
     ],
   },
 ];

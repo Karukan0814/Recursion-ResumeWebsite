@@ -35,7 +35,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .blue-gradient_text {
-    @apply bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#3c85f1] to-[#011d41] bg-clip-text text-transparent;
   }
 
   .input {
@@ -84,11 +84,14 @@ body:has(.card[data-color="green"]:hover) {
   background-position: center; /* 画像を中央に配置 */
 }
 .glassmorphism {
-  background: rgba(8, 116, 239, 0.07);
+  background: rgba(212, 222, 235, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  -webkit-box-shadow: 17px 17px 10px 0px rgba(31, 38, 112, 0.35);
+  -moz-box-shadow: 17px 17px 10px 0px rgba(31, 38, 112, 0.35);
+  box-shadow: 17px 17px 10px 0px rgba(8, 11, 44, 0.35);
 }
 
 .logo {
@@ -202,6 +205,9 @@ body:has(.card[data-color="green"]:hover) {
     #d2e4ff 80%,
     #00c6ff 100%
   );
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(31, 38, 112, 0.35);
+  -moz-box-shadow: 10px 10px 10px 0px rgba(31, 38, 112, 0.35);
+  box-shadow: 10px 10px 10px 0px rgba(8, 11, 44, 0.35);
 }
 .ball:before {
   content: "";
@@ -262,6 +268,9 @@ body:has(.card[data-color="green"]:hover) {
     rgba(225, 238, 255, 0.8) 60%,
     rgba(43, 130, 255, 0.4)
   );
+  /* 
+  -webkit-animation: bubble-anim 2s ease-out infinite;
+  animation: bubble-anim 2s ease-out infinite; */
 }
 
 .ball.bubble:hover {
