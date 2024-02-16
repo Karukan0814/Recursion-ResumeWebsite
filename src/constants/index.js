@@ -24,6 +24,7 @@ import {
   java,
   sql,
   prisma,
+  python,
 } from "../assets/icons";
 
 export const skills = [
@@ -68,9 +69,9 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: redux,
-    name: "Redux",
-    type: "State Management",
+    imageUrl: python,
+    name: "Python",
+    type: "Backend",
   },
   {
     imageUrl: nodejs,
@@ -107,6 +108,21 @@ export const skills = [
     imageUrl: github,
     name: "GitHub",
     type: "Version Control",
+  },
+];
+
+export const qualifications = [
+  {
+    name: "応用情報技術者",
+    date: "",
+  },
+  {
+    name: "AWS SAA",
+    date: "Sep 2023",
+  },
+  {
+    name: "TOEIC 875",
+    date: "",
   },
 ];
 
