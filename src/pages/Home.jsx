@@ -34,7 +34,7 @@ const Home = () => {
     let screenScale, screenPosition;
 
     if (window.innerWidth < 768) {
-      screenScale = [1.8, 1.8, 1.8];
+      screenScale = [2, 2, 2];
       screenPosition = [0, -6.5, -43.4];
     } else {
       screenScale = [2.3, 2.3, 2.3];
@@ -49,7 +49,7 @@ const Home = () => {
 
   return (
     <section className="w-full h-screen relative">
-      <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
+      <div className="absolute top-20 left-0 right-0 z-10 flex items-center justify-center">
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
 
@@ -77,14 +77,7 @@ const Home = () => {
 
           <Bird />
           <Sky isRotating={isRotating} />
-          {/* <Castle
-            isRotating={isRotating}
-            setIsRotating={setIsRotating}
-            setCurrentStage={setCurrentStage}
-            position={[0, -4, -4]}
-            scale={[0.015, 0.015, 0.015]}
-            rotation={[0.1, 4.7077, 0]}
-          /> */}
+
           <Island
             isRotating={isRotating}
             setIsRotating={setIsRotating}
