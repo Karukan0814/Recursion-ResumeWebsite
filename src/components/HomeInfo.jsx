@@ -23,7 +23,7 @@ const renderContent = {
       <div className="flex flex-col text-center px-5 py-10 items-center justify-center">
         {/* <AnimatedTextWord text={"Welcome to Karukan's Portofolio!"} /> */}
 
-        <div className="text-center flex justify-center flex-wrap">
+        <div className="text-center flex justify-center flex-wrap mb-3">
           <h1 className="blue-gradient_text font-semibold drop-shadow head-text">
             Welcome to Karukan's Portofolio!
           </h1>
