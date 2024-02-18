@@ -33,7 +33,10 @@ import sql from "./sql.svg";
 import python from "./python.svg";
 
 import fish from "./fish.svg";
+import home from "./home.svg";
+
 export {
+  home,
   python,
   fish,
   css,
