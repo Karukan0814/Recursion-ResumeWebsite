@@ -25,6 +25,7 @@ import {
   sql,
   prisma,
   python,
+  twitter,
 } from "../assets/icons";
 
 export const skills = [
@@ -214,12 +215,13 @@ export const socialLinks = [
   {
     name: "GitHub",
     iconUrl: github,
-    link: "https://github.com/YourGitHubUsername",
+    link: "https://github.com/Karukan0814",
   },
+
   {
-    name: "LinkedIn",
-    iconUrl: linkedin,
-    link: "https://www.linkedin.com/in/YourLinkedInUsername",
+    name: "Twitter",
+    iconUrl: twitter,
+    link: "",
   },
 ];
 
