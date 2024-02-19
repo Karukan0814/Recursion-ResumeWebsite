@@ -88,8 +88,8 @@ body:has(.card[data-color="green"]:hover) {
 }
 .bg_ocean {
   background: url("../src/assets/images/ocean.jpg");
-  background-size: cover; /* 画像をカバーするように調整 */
-  background-position: center; /* 画像を中央に配置 */
+  background-size: cover;
+  background-position: center;
 }
 .glassmorphism {
   background: rgba(212, 222, 235, 0.7);
@@ -113,6 +113,22 @@ body:has(.card[data-color="green"]:hover) {
   position: relative;
   transition: 250ms;
   perspective: 500px;
+}
+.card {
+  position: relative;
+  transition: 250ms;
+  background: rgba(212, 222, 235, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  -webkit-box-shadow: 17px 17px 10px 0px rgba(31, 38, 112, 0.35);
+  -moz-box-shadow: 17px 17px 10px 0px rgba(31, 38, 112, 0.35);
+  box-shadow: 17px 17px 10px 0px rgba(8, 11, 44, 0.35);
+}
+.card:hover {
+  transform: translateX(5px) translateY(-5px);
+  box-shadow: 0 10px 20px rgba(8, 11, 44, 0.3);
 }
 
 .block-container .btn-back {
