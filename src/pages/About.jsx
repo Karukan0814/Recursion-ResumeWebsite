@@ -6,6 +6,7 @@ import ExperienceItem from "../components/ExperienceItem";
 import SkillItem from "../components/SkillItem";
 import Abstraction from "../components/Abstraction";
 import SubTitle from "../components/SubTitle";
+import CTA from "../components/CTA";
 
 const About = () => {
   return (
@@ -57,7 +58,7 @@ const About = () => {
 
       {/* <hr className="border-slate-200" /> */}
 
-      {/* <CTA /> */}
+      <CTA />
     </section>
   );
 };
