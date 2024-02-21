@@ -7,9 +7,7 @@ function App() {
   console.log("import.meta.env.DEV", import.meta.env.DEV);
   return (
     <main className="bg_ocean">
-      <BrowserRouter
-        basename={import.meta.env.DEV ? "/" : "/react-vite-gh-pages/"}
-      >
+      <BrowserRouter basename={"/Recursion-ResumeWebsite/"}>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
