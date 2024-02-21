@@ -33,7 +33,9 @@ const renderContent = {
           WebDeveloper "かるかん" のポートフォリオにようこそ！
         </p>
 
-        <p className="text-slate-500 text-base sm:text-lg">scroll to right</p>
+        <p className="text-slate-500 text-base sm:text-lg">
+          scroll to right　→
+        </p>
       </div>
     </div>
   ),
