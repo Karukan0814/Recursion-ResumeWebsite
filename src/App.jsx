@@ -1,14 +1,15 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { About, Contact, Home, Projects } from "./pages";
 import Footer from "./components/Footer";
 
-const App = () => {
+function App() {
+  console.log("import.meta.env.DEV", import.meta.env.DEV);
   return (
-    // <main className="bg-slate-300/20ls">
     <main className="bg_ocean">
-      <Router>
+      <BrowserRouter
+        basename={import.meta.env.DEV ? "/" : "/react-vite-gh-pages/"}
+      >
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -17,9 +18,9 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
-      </Router>
+      </BrowserRouter>
     </main>
   );
-};
+}
 
 export default App;
