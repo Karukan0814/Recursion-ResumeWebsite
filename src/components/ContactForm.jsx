@@ -14,7 +14,6 @@ const ContactForm = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    // ここでフォームのデータを処理する（例：APIに送信）
 
     setLoading(true);
     setCurrentAnimation("hit");
@@ -116,7 +115,7 @@ const ContactForm = () => {
         )}
       </div>
 
-      <button type="submit" className="btn">
+      <button type="submit" className="btn" disabled={loading}>
         送信
       </button>
     </form>
