@@ -248,25 +248,19 @@ export const projects = [
     skills: [nextjs, typescript],
     name: "Descover Restaurants",
     description:
-      "GoogleMap APIを利用してユーザーの現在地付近のレストランを自動検索。Next.js",
+      "Next.js+Typescriptで作成したユーザーの現在地からGoogleMap APIで付近のレストランを表示するアプリケーション。ログイン、いいね、コメント機能付き。 また、マップに付近のレストランを表示する。",
     link: "https://discover-restaurants-sigma.vercel.app/",
     github: "https://github.com/Karukan0814/Discover-Restaurants",
   },
-  {
-    type: "front",
-    skills: [nextjs, typescript],
-    name: "Simple News Site",
-    description: "。Next.js",
-    link: "",
-    github: "https://github.com/Karukan0814/Simple-News-Site",
-  },
+
   {
     type: "front",
     skills: [react, typescript],
     name: "Poke Quiz",
-    description: "ポケモンの英語名をゲームで覚えるアプリ。",
+    description:
+      "React+Typescriptで作成したポケモンの英語名学習アプリケーション。ポケモンの情報はPokemonAPIからRestfulAPI形式で取得。クイズはReading, Listening, Spellingの3セクションからなる。 スコア記録機能つき。",
     link: "https://pokemonpj-95d18.web.app/",
-    github: "https://github.com/Karukan0814/Simple-News-Site",
+    github: "https://github.com/Karukan0814/PokeQuiz",
   },
   {
     type: "backend",
