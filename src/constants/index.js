@@ -26,6 +26,7 @@ import {
   prisma,
   python,
   twitter,
+  php,
 } from "../assets/icons";
 
 export const skills = [
@@ -72,6 +73,11 @@ export const skills = [
   {
     imageUrl: python,
     name: "Python",
+    type: "Backend",
+  },
+  {
+    imageUrl: php,
+    name: "PHP",
     type: "Backend",
   },
   {
@@ -122,7 +128,7 @@ export const qualifications = [
     date: "Sep 2023",
   },
   {
-    name: "TOEIC 875",
+    name: "TOEIC 955",
     date: "",
   },
 ];
@@ -228,6 +234,16 @@ export const socialLinks = [
 export const projects = [
   {
     type: "fullstack",
+    skills: [react, typescript, express, nodejs],
+    name: "SocialNetworkingService",
+    description:
+      "KarukanSNS は Twitter に類似した機能を持つソーシャルネットワーキングアプリケーションです。 フロントはReact、バックはExpressを使用。",
+    link: "https://karukan-practice.site/",
+    github: "https://github.com/Karukan0814/Recursion-SocialNetworkingService",
+  },
+
+  {
+    type: "fullstack",
     skills: [nextjs, typescript, express, nodejs],
     name: "Eat Fish - お魚喰えよ",
     description:
@@ -314,5 +330,23 @@ export const projects = [
       "クライアントがCLIを通してmp4をサーバーにアップロードし、サーバーは指定された方法で圧縮・解像度変更・アスペクト変更等を行い、変更後のファイルを出力する。。",
     link: "",
     github: "https://github.com/Karukan0814/Recursion-VideoCompressor",
+  },
+  {
+    type: "backend",
+    skills: [php],
+    name: "PlantUMLServer",
+    description:
+      "PHP+javascriptで作成したplantUML練習アプリ。 ユーザーが記述したplantUMLをリアルタイムで画像表示。画像の.png,.svg、コードの.txtダウンロード機能つき。",
+    link: "",
+    github: "https://github.com/Karukan0814/Recursion-PlantUMLServer",
+  },
+  {
+    type: "backend",
+    skills: [php],
+    name: "PlantUMLServer",
+    description:
+      "ユーザーが画像やテキストコンテンツを投稿できるイメージボード Web アプリ。ユーザーがメインスレッドを開始し、他のユーザーがそれに返信できる。投稿にユーザーデータが添付されていないため、すべての投稿は匿名。 ユーザーは、画像と共にコンテンツを投稿することで新しいスレッドを作成できる。メインスレッドが作成されると、他のユーザーはテキストや画像を使ってそれに返信。",
+    link: "",
+    github: "https://github.com/Karukan0814/Recursion-Imageboard-Webapp",
   },
 ];
